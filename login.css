@@ -1,0 +1,39 @@
+body {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 0px;
+    
+}
+.login-box {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.btn.btn-raised {
+    background-color: RGB(0,110,193) !important;
+    color: #FFF !important;
+    margin-top: 30px;
+}
+
+.login-box img {
+    width: 270px;
+    height: 180px;
+    margin-bottom: 50px;
+}
+
+.login-box .form-group{
+    margin-top: 20px;
+}
+
+.login-box input {
+    padding: 7px;
+    width: 260px;
+    border: 1px solid RGB(0,110,193);
+    border-radius: 5px;
+}
+
+.login-box .mg-b{
+    margin-bottom: 35px;
+}

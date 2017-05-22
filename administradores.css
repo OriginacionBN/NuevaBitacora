@@ -1,0 +1,246 @@
+.body-admin {
+    overflow-x: hidden;
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #158784;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 30px 30px 200px 30px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 5px;
+    line-height: 40px;
+    font-size: 1.7rem;
+    font-weight: 400;
+    padding: 12px 10px;
+    margin-top: 10px;
+}
+
+.sidebar-nav li:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav .active:hover {
+    background: #3e3e3e;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+.sidebar-nav .active {
+    background-color: #4A4A4A;
+}
+
+.sidebar-nav i {
+    margin-right: 10px;
+}
+
+.confirmar-btn {
+    margin-top: 30px;
+    background-color: #9a9a9a;
+    color: #fff !important;
+    position: absolute;
+    right: 5px;
+}
+
+.left {
+    float: left;
+    position: relative;
+}
+
+.buscar-btn {
+    background-color: #9a9a9a !important;
+    color: #fff !important;
+}
+
+.confirmar-btn:hover, .buscar-btn:hover {
+    background-color: #636363 !important;
+}
+
+#menu-toggle {
+    background: #fff;
+    color: #4A4A4A;
+    border: 1px solid #158784;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#wrapper p {
+    margin-top: 20px;
+}
+
+#wrapper .input-group {
+    width: 45%;
+    margin-top: 40px;
+}
+
+.input-group input {
+    padding: 15px;
+}
+
+.user-box {
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #DFDFDF;
+    margin-top: 50px;
+    height: 60px;
+    text-decoration: none;
+    color: #4a4a4a;
+    font-weight: 400;
+}
+
+.user-box:hover, .user-box:focus {
+    text-decoration: none;
+    color: #4a4a4a; 
+    box-shadow: 0px 2px 7px -3px rgba(0, 0, 0, 50)
+}
+
+.user-box img {
+    border-right: 1px solid #DFDFDF;
+    height: 58px;
+}
+
+#wrapper .data-box span {
+    margin-bottom: 20px;
+}
+
+#wrapper #perfil-cliente {
+    margin-bottom: 50px;
+}
+
+#wrapper .panel p {
+    margin-top: 0;
+}
+
+#wrapper .panel {
+    width: 75%;
+}
+
+.user-box .person {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 15px;
+}
+
+.first-name {
+    display: block;
+}
+
+.last-name {
+    display: block;
+}
+
+
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+@media(max-width:768px) {
+    #wrapper .panel {
+        width: 100%;
+    }
+
+    #wrapper .input-group {
+        width: 100%;
+    }
+}

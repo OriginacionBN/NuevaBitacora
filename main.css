@@ -1,0 +1,262 @@
+body {
+    background-color: #F5F5F5;
+    font-family: 'Roboto';
+    height: 100%;
+    color: RGB(9,79,164);
+}
+
+p {
+    color: RGB(9,79,164);
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+h1 {
+    font-weight: 400;
+    color: #4A4A4A;
+}
+
+/* HEADER */
+
+.navbar {
+    background-color: #fff !important;
+    color: #4A4A4A !important;
+    font-size: 1.7rem;
+    font-weight: 400;
+    box-shadow: 3px 1px 2px #C0C0C0;
+}
+
+.navbar img {
+    width: 70px;
+    height: 35px;
+}
+
+.navbar .caret {
+    color: #158784;
+}
+
+.navbar-nav>li>.dropdown-menu {
+    margin-top: 2px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #292929;
+    position: absolute;
+    width: 100%;
+    padding: 15px;
+    z-index: 1000;
+    border-top: 1px solid #292929;
+    border-bottom: 1px solid #292929;
+    position: fixed;
+    bottom: 0;
+}
+
+footer a {
+    margin-right: 24px;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+
+/* CLIENTE CSS */
+
+.body-cliente {
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+#perfil-cliente img {
+    border: 1px solid #979797;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: block;
+    height: 150px;
+}
+
+#perfil-cliente span {
+    color: #158784;
+    font-weight: 400;
+    font-size: 1.6rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#perfil-cliente p {
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+#perfil-cliente .info-box, .data-box {
+    display: inline-block;
+    text-align: left;
+}
+
+#perfil-cliente .data-box {
+    margin-left: 20px;
+}
+
+#perfil-cliente > .info-box-responsive > p, span{
+    display: block;
+}
+
+.body-cliente h1 {
+    margin-bottom: 30px;
+}
+
+.panel {
+    border: 1px solid #CBCBCB;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.panel-header {
+    border-bottom: 1px solid #DDDDDD;
+    padding: 15px 30px;
+}
+
+.panel-header h4 {
+    color: #158784;
+    font-weight: 400;
+}
+
+.panel-header .mes {
+    float: right;
+    position: relative;
+    bottom: 29px;
+    font-weight: 300 !important;
+    color: #ADADAD !important;
+    font-size: 1.5rem !important;
+}
+
+.panel-body {
+    padding: 30px;
+}
+
+.panel-body span {
+    color: #4A4A4A !important;
+}
+
+/* HOME */
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+    height: 600px;
+}
+
+.carousel-indicators .active {
+     background-color: #158784;
+     border: 1px solid #158784;
+}
+
+#slider p {
+    color: #fff;
+}
+
+#quotes {
+    padding: 20px 50px;
+    color: #fff;
+    background-color: #158784;
+    text-align: center;
+}
+
+#quotes p {
+    color: #fff;
+    font-weight: 300;
+}
+
+#quotes h3 {
+    font-weight: 400;
+    font-size: 2.3rem;
+}
+
+#inspectores {
+    padding: 50px 50px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#inspectores p {
+    width: 50%;
+    margin: auto;
+}
+
+#inspectores h2 {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 3.5rem;
+}
+
+#inspectores .btn {
+    margin-top: 30px;
+    background-color: #158784;
+    color: #fff;
+}
+
+#transformacion {
+    background-color: #4A4A4A;
+    padding: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+#transformacion h2 {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 3.5rem;
+}
+
+#transformacion p {
+    color: #fff;
+    width: 70%;
+    margin: auto;
+}
+
+#transformacion i {
+    font-size: 5.5rem;
+}
+
+#transformacion .btn {
+    color: #fff;
+    margin-top: 25px;
+    background-color: #158784;
+}
+
+#transformacion .btn:hover, #inspectores .btn:hover {
+    background-color: #0e6b69;
+}
+
+.home-body {
+    padding-bottom: 51px;
+}
+
+.home-body .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media (max-width: 768px) {
+    .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+        height: 320px !important;
+    }
+}
+
+
+
+@media(max-width: 414px) {
+    .panel-header .mes {
+        display: block !important;
+        float: none !important;
+        bottom: initial  !important;
+    }
+    .panel {
+        margin-right: 2% !important;
+        margin-left: 2% !important;
+    }
+}
